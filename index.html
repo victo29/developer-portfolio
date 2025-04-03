@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <title>Victor Tavares</title>
+</head>
+<body>
+
+    <article>
+        <button class="scrollTop" onclick="backTop();">
+            <img class="img-change" src="./assets/img/light/arrow.svg" alt="">
+        </button>
+    </article>
+
+    <section class="first-section">
+        <nav>
+            <div class="box-theme">
+                <p>Escolha o tema</p>
+                <button onclick=darkMode() class="button-dark">Dark</button>
+                <button  onclick=lightMode() class="button-light">Light</button>
+            </div>
+            <div class="itens-nav">
+                <ul class="container-itens-nav" type="none">
+                    <li><a href="#habilidades " class="links-nav"> Habilidades</a></li>
+                    <li><a href="#projetos" class="links-nav">Projetos</a></li>
+                    <li><a href="#contatos" class="links-nav">Contato</a></li>
+                </ul>
+            </div>
+
+            <span onclick=showSidebar() class="menu-button" href="">
+                <img class="img-change" src="assets/img/light/menu.svg" alt="">
+            </span>
+        </nav>
+
+        <div class="sidebar">
+            <span onclick=hideSidebar() class="close-button" href="">
+                <img class="img-change" src="assets/img/light/close.svg" alt="">
+            </span>
+            <ul class="container-itens-side" type="none">
+                <li><a href="#habilidades " class="links-nav"> Habilidades</a></li>
+                <li><a href="#projetos" class="links-nav">Projetos</a></li>
+                <li><a href="#contatos" class="links-nav">Contato</a></li>
+            </ul>
+
+
+            <div class="box-theme-side">
+                <p>Escolha o tema</p>
+                <button onclick=darkMode()  class="button-dark">Dark</button>
+                <button onclick=lightMode() class="button-light">Light</button>
+            </div>
+            
+            
+        </div>
+    
+        <div class="container">
+            <div class="circle"></div>
+            <div class="box-photo">
+                <img src="assets/img/perfil.png" alt="Foto de Victor">
+            </div>
+            <div class="box-text">
+                <h1>Olá, Sou Victor Tavares</h1>
+                <h1>Desenvolvedor Web</h1>
+            </div>
+            <div class="box-cv">
+                <a class="button-cv" href="assets/Victor Tavares - DEV.pdf" download="curriculo.pdf">Download CV</a>
+                <a href="https://github.com/victo29" target="_blank" class="icon-git"><img class="img-change" src="assets/img/light/github.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="second-section" id="habilidades">
+        <div class="top-second ">
+            <h1>Habilidades</h1>
+            <p>
+                Desenvolvo aplicações web utilizando <strong>JavaScript</strong>, <strong>PHP</strong>, <strong>React</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>SQL</strong> e <strong>Python</strong>. Tenho experiência com <strong>phpMyAdmin</strong> para gerenciamento de bancos de dados e foco em código organizado e eficiente.
+            </p>
+        </div>
+        <div class="container-second">
+            
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/javascript.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/php.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>PHP</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/react.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>React</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/html.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>HTML</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/css.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>CSS</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/mysql.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>MySQL</p>
+                </div>
+            </div>
+
+            <div class="card-skills hidden">
+                <div class="top-card">
+                    <img class="img-change" src="assets/img/light/python.svg" alt="Card de habilidade">
+                </div>
+                <div  class="name-skill">
+                    <p>Python</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="third-section" id="projetos">
+        <div class="top-third">
+            <h1>Projetos</h1>
+        </div>
+
+        <div class="container-projects">
+
+            <div class="container-swiper swiper ">
+                <div class="card-wrapper   ">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide ">
+                            <a href="https://github.com/victo29/instagram-clone" target="_blank" class="card-link">
+                                <img src="assets/img/img-projects/instagram-clone.jpg" alt="Card img" class="card-image">
+                                <div class="box-badge">
+                                    <p class="badge html">HTML</p>
+                                    <p class="badge css">CSS</p>
+                                    <p class="badge js">JS</p>
+                                </div>
+
+                                <h2 class="card-title">Clone do instagram</h2>
+                                <button class="card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide ">
+                            <a href="https://becaedu.com.br/" target="_blank" class="card-link">
+                                <img src="assets/img/img-projects/beca.jpg" alt="Card img" class="card-image">
+                                <div class="box-badge">
+                                    <p class="badge php">PHP</p>
+                                    <p class="badge css">CSS</p>
+                                    <p class="badge js">JS</p>
+                                </div>
+                                <h2 class="card-title">BECA </h2>
+                                <button class="card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide ">
+                            <a href="https://github.com/victo29/my-library" target="_blank" class="card-link">
+                                <img src="assets/img/img-projects/mylibrary.jpg" alt="Card img" class="card-image">
+                                <div class="box-badge">
+                                    <p class="badge react">REACT</p>
+                                    <p  class="badge python">PY</p>
+                                    <p class="badge css">CSS</p>
+                                    <p class="badge js">JS</p>
+                                </div>
+                                <h2 class="card-title">My Library</h2>
+                                <button class="card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide ">
+                            <a href="#projetos" class="card-link">
+                                <img src="assets/img/img-projects/youtube-clone.png" alt="Card img" class="card-image">
+                                <p class="badge">..</p>
+                                <h2 class="card-title">Clone do Youtube</h2>
+                                <button class="card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer id="contatos">
+        <div class="first-container-footer">
+            <h1>Victor Tavares</h1>
+            <h2>Desenvolvedor Web</h2>
+            <div class="box-icons">
+                <a href="https://www.linkedin.com/in/victor-tavares-profissional/" target="_blank"><img class="img-change" src="assets/img/light/linkedin.svg" alt="Icone Linkedin"></a>
+                <a href="https://github.com/victo29"><img class="img-change" src="assets/img/light/github.svg" alt="Icone github"></a>
+            </div>
+        </div>
+        <div class="second-container-footer">
+            <h1>Entre em Contato</h1>
+            <p class="email-title">EMAIL</p>
+            <p class="email-text">victor.sq.tavares@gmail.com</p>
+        </div>
+    </footer>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
